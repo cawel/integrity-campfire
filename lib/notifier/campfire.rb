@@ -12,7 +12,7 @@ module Integrity
       end
 
       def deliver!
-        room.speak "#{short_message}. #{build_url}"
+        room.speak "#{short_message}. #{commit_url}"
         room.paste full_message if build.failed?
       end
 
